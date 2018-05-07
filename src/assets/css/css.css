@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* Young C */
+
+* {margin:0;padding:0;outline:none;list-style:none;text-decoration:none; box-sizing: border-box; }
+body,html {color:#333;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;background: none;font-family:arial, "微软雅黑", Microsoft YaHei;position: relative;font-size: .18rem;line-height: 1.7;/*overflow-x: hidden;*/max-width: 750px;margin: 0 auto; }
+img {border:none;max-width: 100%;width: auto\9;height: auto;-ms-interpolation-mode: bicubic;_width:auto;  }
+input, textarea ,select{border:none;background:none;cursor:pointer;font-size:14px;vertical-align:middle;color:#333; font-family:arial, "微软雅黑", Microsoft YaHei;  }
+select {border:inherit;background: inherit; }
+a {text-decoration:none;color:#333; }
+em, i {font-style:normal;  }
+a:focus, input, select {outline:none;  }
+.clearfix {*zoom:1; clear: both; }
+.clearfix:after {content:"\200B"; display: block;clear: both;height: 0;  }
+input[type="submit"], input[type="reset"], input[type="button"], button, select {-webkit-appearance: none;  }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{ font-weight: normal; padding: 0; margin: 0; font-size: 14px; line-height: 1.4;  font-family:arial, "微软雅黑", Microsoft YaHei;}
+p,ul, ol{ margin: 0;}
+
+/* 以上为公共样式 */
+
+/*    header   begin   */
+
+header{padding: 0 .3rem;background: #fff;height: 1rem;}
+.logo{float: left;position: relative;top: .08rem;}
+.logo img{width: auto;height: .84rem;}
+.menu{float: right;background: url("../images/menu.png") no-repeat center;width: .6rem;height: .36rem;background-size: contain;position: relative;top: .32rem;}
+.headTit{overflow: hidden;text-align: center;text-transform: capitalize;line-height: 1rem;font-size: .3rem;font-weight: bold;}
+/*    header   END     */
+
+/*footer  begin  */
+footer{background: #002246;padding: .2rem 0;text-align: center;color: #fff;}
+footer a{color: #fff;display: inline-block;padding:0 .1rem;}
+.footlogo{width: .97rem;height: .84rem;}
+/*footer  END    */
+
+/*indexproList  begin  */
+
+.indexproListBox{padding: .4rem;}
+.indexproList{margin-left: -.35rem;overflow: hidden;}
+.indexproList li{float: left;width: 2rem;height: 2rem;border-radius: 5px;background: #ffbc6a;overflow: hidden;text-align: center;position: relative;margin-left: .35rem;margin-bottom: .4rem;}
+.indexproList li:nth-child(2){background-color: #55cce5;}
+.indexproList li:nth-child(3){background-color: #fd928b;}
+.indexproList li:nth-child(4){background-color: #ffa07a;}
+.indexproList li:nth-child(5){background-color: #59a2e1;}
+.indexproList li:nth-child(6){background-color: #fec948;}
+.i-pro-tit{height: .6rem;line-height: .6rem;color: #fff;background: rgba(0,0,0,.4);position: absolute;bottom: 0;left: 0;width: 100%;font-size: .3rem;}
+
+/*indexproList   END   */
+
+/*classListBox  begin  */
+.classListBox{padding: .4rem;}
+.classListTit{position: relative;}
+.classListTit:before{content: '';width: 100%;height: 4px;position: absolute;bottom: 0;left: 0;background: #cc9655}
+.classListTit em{display: inline-block;width: 2.17rem;height: .4rem;line-height: .4rem;background: #cc9655;color: #fff;text-align: center;font-size: .2rem;border-radius: 20px 20px 0 0;}
+.classListTit span{float: right;text-transform: capitalize;font-size: .14rem;color: #cc9655;line-height: .4rem;}
+.classListConLeft{width: 2.17rem;height: 2.17rem;overflow: hidden;float: left;}
+.classListConRigth{overflow: hidden;padding: 0 .25rem;}
+.classListCon{overflow: hidden;box-shadow: 1px 1px 3px #f4f3f3;}
+.classL-C-R-Tit{font-size: .25rem;color: #212121;word-break: break-all;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;margin-top: .2rem;}
+.classL-C-R-Time{padding: 0 10px;background: #dddddd;height: .25rem;line-height: .25rem;text-align: center;display: inline-block;font-size: .12rem;margin-bottom: .2rem;margin-top: .2rem;}
+.classL-C-R-Bri{word-break: break-all;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;font-size: .14rem;}
+.classList li{margin-bottom: .4rem;}
+.classList li:nth-child(2) .classListTit:before,.classList li:nth-child(2) .classListTit em{background-color: #55cce5;}
+.classList li:nth-child(2) .classListTit span{color:#55cce5; }
+.classList li:nth-child(3) .classListTit:before,.classList li:nth-child(3) .classListTit em{background-color: #fd928b;}
+.classList li:nth-child(3) .classListTit span{color:#fd928b; }
+.classList li:nth-child(4) .classListTit:before,.classList li:nth-child(4) .classListTit em{background-color: #ffa07a;}
+.classList li:nth-child(4) .classListTit span{color:#ffa07a; }
+.classList li:nth-child(5) .classListTit:before,.classList li:nth-child(5) .classListTit em{background-color: #59a2e1;}
+.classList li:nth-child(5) .classListTit span{color:#59a2e1; }
+.classList li:nth-child(6) .classListTit:before,.classList li:nth-child(6) .classListTit em{background-color: #fec948;}
+.classList li:nth-child(6) .classListTit span{color:#fec948; }
+/*classListBox  END    */
+
+
+
