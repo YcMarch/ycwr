@@ -1,9 +1,9 @@
 import axios from 'axios'
-axios.defaults.baseURL='https://www.easy-mock.com/mock/5ae92b0eb4de1c75f171c78b/ycwr';
+axios.defaults.baseURL='https://www.easy-mock.com/mock/5af292f7ba54552178d987db/ycwr1';
 
 //首页数据
 export function getIndex() {
   return axios('/index')
 }
-console.log(getIndex)
+
 

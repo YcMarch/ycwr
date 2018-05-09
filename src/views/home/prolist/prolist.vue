@@ -18,15 +18,24 @@
         name: "prolist",
         data(){
           return{
-            list:[]
+            //list:[]
+            list:JSON.parse(localStorage.getItem('prolistdata'))
           }
         },
     created(){
           getIndex().then(({data})=>{
-            console.log(data)
+            console.log(data);
             this.list = data.data.classified
+            console.log(this.list)
           })
-
+    },
+    watch:{
+      list:{
+        deep:true,
+        handler(){
+          localStorage.setItem('prolistdata',JSON.stringify(this.list))
+        }
+      }
     }
     }
 </script>

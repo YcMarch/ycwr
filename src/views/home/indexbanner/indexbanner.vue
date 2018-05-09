@@ -1,6 +1,6 @@
 <template>
   <!--indexBanner   begin  -->
-  <div class="indexBanner"><a href="#"><img src="list[0].img" alt="" width="750" height="200"></a> </div>
+  <div class="indexBanner"><a href="#" v-for="item in list"><img :src="item.img" alt="" width="750" height="200"></a> </div>
   <!--indexBanner   END   -->
 </template>
 
@@ -11,16 +11,24 @@
         name: "indexbanner",
         data(){
           return {
-            list:[]
+            //list:[]
+            list:JSON.parse(localStorage.getItem('indexbannerdata'))
           }
         },
       created(){
           getIndex().then(({data})=>{
-            console.log(data)
-            this.list = data.data.indexBanner
-            console.log(this.list[0].img)
+            this.list = data.data.adbanner;
+            console.log(this.list)
           })
+      },
+    watch:{
+      list:{
+        deep:true,
+        handler(){
+          localStorage.setItem('indexbannerdata',JSON.stringify(this.list))
+        }
       }
+    }
     }
 </script>
 
